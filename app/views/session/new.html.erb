@@ -50,7 +50,7 @@
 
 
 
-      <form class="ui form">
+      <%= form_for(:session, html: {class: "ui form",role: "form"}, url: login_path) do |f| %>
 
 
 
@@ -58,15 +58,13 @@
 
 
 
-          <label>Username</label>
-
-
+          <%= f.label :username, "Username"%>
 
           <div class="ui left icon input">
 
 
-
-            <input type="text" placeholder="Username">
+            <%= f.text_field :username, placeholder:"Enter Username"%>
+            
 
 
 
@@ -86,7 +84,7 @@
 
 
 
-          <label>Password</label>
+          <%= f.label :Password, "Password"%>
 
 
 
@@ -94,7 +92,7 @@
 
 
 
-            <input type="text" placeholder="Password">
+            <%= f.password_field :password, placeholder: "enter Password"%>
 
 
 
@@ -110,11 +108,11 @@
 
 
 
-        <button class="ui orange submit button">Login</button>
+        <%= f.button "Login",class: "ui orange submit button"%>
 
 
 
-      </form>
+       <%end%>
 
 
 
