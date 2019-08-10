@@ -68,6 +68,10 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
+  config.action_cable.url = "https://message-mee.herokuapp.com/cable"
+  config.web_socket_server_url = "wss://message-mee.herokuapp.com/cable" 
+  config.action_cable.allowed_request_origins = ['https://message-mee.herokuapp.com', 'http://message-mee.herokuapp.com']
+  #ws://localhost:3000/cable   
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
