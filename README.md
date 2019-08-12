@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository contains the source code for the Message-Me App.
+The App is Hosted On Heroku , You Can Access it here: https://message-mee.herokuapp.com 
 
-Things you may want to cover:
+/* The Web App uses Action Cable For Real Time Comm. */
 
-* Ruby version
 
-* System dependencies
+* Ruby version: 2.6.3
+* Rails Version: 5.2.3
 
-* Configuration
+* Database Management: Postgresql
 
-* Database creation
+* Authentication System: Bcrypt
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Data Structure Project Implementation Using Redis.
+
+
+
 
 * ...
